@@ -1,11 +1,11 @@
-import TextEditor from '../../Components/TextEditor';
+import TextEditor from '../../components/TextEditor';
 import {useRouter} from 'next/dist/client/router'
 import Button from "@material-tailwind/react/Button";
 import Icon from "@material-tailwind/react/Icon";
 import { db } from '../../firebase.js';
 import { useDocumentOnce} from 'react-firebase-hooks/firestore';
 import {getSession, signOut, useSession} from "next-auth/client";
-import Login from '../../Components/Login';
+import Login from '../../components/Login';
 
 function Doc() {
     const [session] = useSession();
